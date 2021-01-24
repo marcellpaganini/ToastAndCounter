@@ -7,28 +7,28 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_toast"
         android:layout_width="382dp"
         android:layout_height="50dp"
-        android:text="TOAST"
+        android:text="@string/btn_toast"
         app:backgroundTint="#1D31A3"
         tools:layout_editor_absoluteX="14dp"
         tools:layout_editor_absoluteY="16dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_up"
         android:layout_width="382dp"
         android:layout_height="50dp"
-        android:text="COUNT UP"
+        android:text="@string/btn_up"
         app:backgroundTint="#1D31A3"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="610dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_down"
         android:layout_width="382dp"
         android:layout_height="50dp"
-        android:text="COUNT DOWN"
+        android:text="@string/btn_down"
         app:backgroundTint="#1D31A3"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="665dp" />
@@ -39,7 +39,7 @@
         android:layout_height="531dp"
         android:background="#F8E966"
         android:gravity="center"
-        android:text="0"
+        android:text="@string/textView"
         android:textColor="#FA3C873E"
         android:textSize="70sp"
         android:textStyle="bold"
