@@ -42,18 +42,16 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "Hello $counter", Toast.LENGTH_SHORT).show()
     }
 
-    /*override fun onSaveInstanceState(outState: Bundle) {
+    override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
 
-        val number: Int = counter
         outState.putInt("count", counter)
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
 
-        val userInt: Int = savedInstanceState.getInt( "count")
-        counter = userInt
+        counter=savedInstanceState.getInt("count")
         binding.textView.text = counter.toString()
-    }*/
+        }
 }
