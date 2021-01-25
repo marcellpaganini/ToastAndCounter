@@ -11,12 +11,12 @@
             android:id="@+id/btn_toast"
             android:layout_width="150dp"
             android:layout_height="64dp"
-            android:layout_marginTop="88dp"
+            android:layout_marginTop="64dp"
             android:layout_marginEnd="16dp"
             android:text="@string/btn_toast"
             app:backgroundTint="#1D31A3"
             app:layout_constraintEnd_toStartOf="@+id/textView"
-            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintHorizontal_bias="0.885"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,15 +44,15 @@
             app:backgroundTint="#1D31A3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/textView"
-            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintHorizontal_bias="0.885"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_up"
-            app:layout_constraintVertical_bias="0.063" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="515dp"
-            android:layout_height="276dp"
+            android:layout_width="434dp"
+            android:layout_height="225dp"
             android:layout_marginTop="64dp"
             android:background="#F8E966"
             android:gravity="center"
