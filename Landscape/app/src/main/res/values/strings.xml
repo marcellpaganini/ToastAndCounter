@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ToastAndCounter</string>
+    <string name="btn_up">COUNT UP</string>
+    <string name="btn_down">COUNT DOWN</string>
+    <string name="btn_toast">TOAST</string>
+    <string name="textView">0</string>
+</resources>

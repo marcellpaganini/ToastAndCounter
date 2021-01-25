@@ -1,55 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
         <Button
             android:id="@+id/btn_toast"
-            android:layout_width="382dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="150dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="16dp"
             android:text="@string/btn_toast"
             app:backgroundTint="#1D31A3"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.888"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btn_up"
-            android:layout_width="382dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="150dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
             android:text="@string/btn_up"
             app:backgroundTint="#1D31A3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.888"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_toast" />
 
         <Button
             android:id="@+id/btn_down"
-            android:layout_width="382dp"
-            android:layout_height="50dp"
+            android:layout_width="150dp"
+            android:layout_height="64dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:text="@string/btn_down"
             app:backgroundTint="#1D31A3"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.888"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_up"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.063" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="382dp"
-            android:layout_height="399dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="515dp"
+            android:layout_height="276dp"
+            android:layout_marginTop="64dp"
             android:background="#F8E966"
             android:gravity="center"
             android:text="@string/textView"
@@ -57,7 +61,8 @@
             android:textSize="120sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.851"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_toast" />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
