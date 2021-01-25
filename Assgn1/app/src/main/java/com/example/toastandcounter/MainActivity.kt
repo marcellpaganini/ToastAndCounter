@@ -1,6 +1,7 @@
 package com.example.toastandcounter
 
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -40,4 +41,19 @@ class MainActivity : AppCompatActivity() {
     private fun showToast() {
         Toast.makeText(this, "Hello $counter", Toast.LENGTH_SHORT).show()
     }
+
+    /*override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+
+        val number: Int = counter
+        outState.putInt("count", counter)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+
+        val userInt: Int = savedInstanceState.getInt( "count")
+        counter = userInt
+        binding.textView.text = counter.toString()
+    }*/
 }
